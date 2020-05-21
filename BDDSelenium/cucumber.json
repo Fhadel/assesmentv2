@@ -1,0 +1,413 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 23447746,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinition.definedScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Login with facebook",
+        "description": "",
+        "id": "as-a-user,-i-want-to-book-a-hotel-using-facebook-credentials;login-with-facebook",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 19044839652,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I open \"https://www.tiket.com/\" in browser",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://www.tiket.com/",
+                  "offset": 8
+                }
+              ],
+              "location": "StepDefinition.openApps(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4582552194,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click \".header-right-item:nth-child(3)\" as Login button",
+            "match": {
+              "arguments": [
+                {
+                  "val": ".header-right-item:nth-child(3)",
+                  "offset": 9
+                }
+              ],
+              "location": "StepDefinition.i_click_Login_button(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 11855434442,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I click \".facebook\" as Login with Facebook",
+            "match": {
+              "arguments": [
+                {
+                  "val": ".facebook",
+                  "offset": 9
+                }
+              ],
+              "location": "StepDefinition.i_click_Login_with_Facebook(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 41091868,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I succeed login by seeing text Mau ke mana? in Home page",
+            "match": {
+              "location": "StepDefinition.i_succeed_login()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 67307,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinition.definedScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Book a Hotel with 32 Guest and 8 rooms",
+        "description": "",
+        "id": "as-a-user,-i-want-to-book-a-hotel-using-facebook-credentials;book-a-hotel-with-32-guest-and-8-rooms",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 77605,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I already in Homepage",
+            "match": {
+              "location": "StepDefinition.i_already_in_Homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 754211,
+              "error_message": "java.lang.NullPointerException\n\tat pages.HomePage.clickHotelDestination(HomePage.java:30)\n\tat stepDefinition.StepDefinition.i_click_as_a_Hotel_Destination(StepDefinition.java:77)\n\tat ✽.When I click text \"Mau nginep ke mana?\" as a Hotel Destination(Task.feature:12)\n",
+              "status": "failed"
+            },
+            "line": 12,
+            "name": "I click text \"Mau nginep ke mana?\" as a Hotel Destination",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Mau nginep ke mana?",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefinition.i_click_as_a_Hotel_Destination(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "I can click \"#destinationDropDownList-place2\" to choose a value of location of hotel",
+            "match": {
+              "arguments": [
+                {
+                  "val": "#destinationDropDownList-place2",
+                  "offset": 13
+                }
+              ],
+              "location": "StepDefinition.i_can_click_to_choose_a_value_of_location_of_hotel(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "I choose existing date value for my booking date",
+            "match": {
+              "location": "StepDefinition.i_choose_existing_date_value_for_my_booking_date()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "I can click \"widget-passenger-counter-item\" to add the GUEST as many as \"32\" guest",
+            "match": {
+              "arguments": [
+                {
+                  "val": "widget-passenger-counter-item",
+                  "offset": 13
+                },
+                {
+                  "val": "32",
+                  "offset": 73
+                }
+              ],
+              "location": "StepDefinition.i_can_click_to_add_the_guest_as_many_as_guest(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "I can click \"widget-passenger-counter-item\" to add the ROOMS as many as \"8\" rooms",
+            "match": {
+              "arguments": [
+                {
+                  "val": "widget-passenger-counter-item",
+                  "offset": 13
+                },
+                {
+                  "val": "8",
+                  "offset": 73
+                }
+              ],
+              "location": "StepDefinition.i_can_click_to_add_the_rooms_as_many_as_rooms(String,String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 71843,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinition.definedScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "Book Flight Ticket for 2 Transit",
+        "description": "",
+        "id": "as-a-user,-i-want-to-book-a-hotel-using-facebook-credentials;book-flight-ticket-for-2-transit",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 133553,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I already in Homepage",
+            "match": {
+              "location": "StepDefinition.i_already_in_Homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1643977,
+              "error_message": "cucumber.api.PendingException: TODO: implement me\n\tat stepDefinition.StepDefinition.i_login_with_email_with_Pass(StepDefinition.java:107)\n\tat ✽.And I login with email \"Fhadel\" with Pass \"P@ssw0rd\"(Task.feature:20)\n",
+              "status": "pending"
+            },
+            "line": 20,
+            "name": "I login with email \"Fhadel\" with Pass \"P@ssw0rd\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Fhadel",
+                  "offset": 20
+                },
+                {
+                  "val": "P@ssw0rd",
+                  "offset": 39
+                }
+              ],
+              "location": "StepDefinition.i_login_with_email_with_Pass(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "I choose destination from \"Surabaya\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Surabaya",
+                  "offset": 27
+                }
+              ],
+              "location": "StepDefinition.i_choose_destination_from(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "I choose current date today",
+            "match": {
+              "location": "StepDefinition.i_choose_current_date_today()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "I choose \"2\" Adult Passengers",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 10
+                }
+              ],
+              "location": "StepDefinition.i_choose_Adult_Passengers(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "I choose \"Ekonomi\" Cabin",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Ekonomi",
+                  "offset": 10
+                }
+              ],
+              "location": "StepDefinition.i_choose_Cabin(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 25,
+            "name": "I search the Flight schedule",
+            "match": {
+              "location": "StepDefinition.i_search_the_Flight_schedule()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 68090,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinition.definedScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 27,
+        "name": "Logout",
+        "description": "",
+        "id": "as-a-user,-i-want-to-book-a-hotel-using-facebook-credentials;logout",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 28,
+            "name": "i already in homepage",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 29,
+            "name": "i click my account icon \".header-account\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 30,
+            "name": "i can click logout button \"Keluar\"",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 31,
+            "name": "I can succesfully logout",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "As a user, I want to Book a Hotel using Facebook Credentials",
+    "description": "",
+    "id": "as-a-user,-i-want-to-book-a-hotel-using-facebook-credentials",
+    "keyword": "Feature",
+    "uri": "Task.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@ReservationHotel"
+      }
+    ]
+  }
+]
