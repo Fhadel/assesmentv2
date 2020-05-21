@@ -1,5 +1,5 @@
-# FBRomli
+# Assesment v2
 
-1. Branch Katalon, menggunakan Katalon dengan cara menjalankan TestCase Register di chrome
+1. BDD with Selenium created using JAVA and CUCUMBER
 
-2. Branch RomliEclipse, menggunakan IDE Eclipse menjalankannya dengan membuka file Runner dan jalankan dengan JUnit test.
+2. See Feature Files for scenario and Step Definition for Detail
